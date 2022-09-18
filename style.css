@@ -156,6 +156,7 @@ ul {
     .about-left {
         width: 90%;
         margin: auto;
+        margin-top: 3rem;
     }
 
     .about-right {
