@@ -113,6 +113,7 @@ button:hover {
 }
 
 ul {
+    margin-top: 0.5rem;
     margin-left: 1.2rem;
 }
 
@@ -121,6 +122,10 @@ ul {
     padding: 1rem;
     width: 800px;
     margin: 2rem auto;
+}
+
+.project-title {
+    margin-bottom: 0.5rem;
 }
 
 .project-section a {
