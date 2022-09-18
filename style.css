@@ -121,11 +121,16 @@ ul {
     margin-left: 1.2rem;
 }
 
+.projects {
+    max-width: 800px;
+    margin: auto;
+}
+
 .project-section {
     background-color: whitesmoke;
     padding: 1rem;
-    width: 800px;
-    margin: 2rem auto;
+    margin: 2rem;
+    /* margin: 2rem auto; */
 }
 
 .project-title {
@@ -157,6 +162,11 @@ ul {
         margin-top: 0px;
         border-left: none;
     }
+}
+
+.disclaimer {
+    text-align: center;
+    height: 50px;
 }
 
 @media(max-width: 480px) {
