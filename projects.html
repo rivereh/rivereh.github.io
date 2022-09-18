@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rivereh</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3d26462c5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -23,7 +24,24 @@
     <div class="projects">
         <div class="project-section">
             <h1 class="project-title">CourseXpo</h1>
-            <img src="img/coursexpo.png" alt="">
+            <!-- <img src="img/coursexpo.png" alt=""> -->
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/coursexpo/coursexpo.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/coursexpo/coursexpoquiz.gif" alt=""></div>
+                    <div class="swiper-slide"><img src="img/coursexpo/coursexpo1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/coursexpo/coursexpo2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/coursexpo/coursexpo3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/coursexpo/coursexpo4.png" alt=""></div>
+                    ...
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
             <h3>CourseXpo is a collaborative virtual learning environment</h3>
             <ul>
                 <li>Built in the Unity3D engine, users can connect into a 3d world to learn together.</li>
@@ -32,7 +50,7 @@
                 <li>Students can communicate with each other through voice or text chat.</li>
                 <li>The program is accessible through PC or can be sideloaded onto a Meta Quest.</li>
             </ul>
-            <a href="https://sites.uw.edu/crcs/projects/2022coursexpo-a-collaborative-virtual-learning-environment/" target="_blank">More info here</a>
+            <a href="https://sites.uw.edu/crcs/projects/2022coursexpo-spatial-chat-and-collaborative-drawing/" target="_blank">More info here</a>
         </div>
     
         <div class="project-section">
@@ -46,5 +64,7 @@
 
     <h3 class="disclaimer">More projects coming soon</h3>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
