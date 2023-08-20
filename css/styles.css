@@ -551,6 +551,14 @@ header .socials ul li a:hover {
     line-height: 2rem;
     gap: 1rem;
   }
+
+  header nav .logo {
+    margin-left: 2rem;
+  }
+
+  header nav img {
+    margin-right: 2rem;
+  }
 }
 
 @media screen and (max-width: 360px) {
