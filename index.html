@@ -1,52 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rivereh</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3d26462c5c.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script defer src="main.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <script
+      defer
+      src="https://code.iconify.design/1/1.0.7/iconify.min.js"
+    ></script>
+    <title>River Hill</title>
+  </head>
+  <body>
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <!-- <header>
-        <div class="container nav">
-            <h1>rivereh</h1>
-            <div>
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-            </div>
-        </div>
-    </header> -->
-    
-
-    <div class="container about">
-        <div class="about-left">
-            <h1>Hi,</h1>
-            <h2>I'm River</h2>
-            <h3>A software engineer</h3>
-            <hr width="75%">
-            <p>Graduated from the University of Washington in Computer Science and Software Engineering. My passion lies in solving complex problems and creating innovative solutions using the knowledge gained throughout my education. I'm eager to apply my skills to real-world projects and continue learning and growing as a software engineer. My interests include full-stack web development and game development.</p>
-            <br>
-            <a href="projects.html" class="btn">Projects</a>
-        </div>
-        <div class="about-right">
-            <div class="image-container">
-                <img src="img/computer.gif" alt="">
-            </div>
-            <div class="about-container">
-                <h3>Social & Contact</h3>
-                <div class="about-icons">
-                    <a href="https://github.com/rivereh" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-                    <a href="mailto:riverehill@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/rivereh/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                </div>
-            </div>
+    <!-- HEADER -->
+    <header id="home">
+      <nav id="nav" aria-label="Main menu">
+        <div class="logo">
+          <h3>River <span>Hill</span></h3>
         </div>
 
-        
-    </div>
+        <ul class="links">
+          <li>
+            <a href="#home" class="link"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#about" class="link"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="#skills" class="link"
+              ><i class="fas fa-tools"></i> Skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="link"
+              ><i class="fab fa-codepen"></i> Projects</a
+            >
+          </li>
+        </ul>
 
-</body>
+        <div class="hamburger-menu" id="hamburger-menu">
+        </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <div class="hero">
+        <h1 class="h1">Hi, I'm a <span class="animate"></span></h1>
+        <p class="student" id="student">
+          Recent graduate with a passion for software engineering.
+        </p>
+        <div class="hero-btns">
+          <a href="#about" class="about" id="about-btn">About me</a>
+          <a href="#projects" class="projects-btn" id="projects-btn"
+            >Projects</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT ME -->
+      <section id="about">
+        <div class="container-about">
+          <div class="about-me" id="about-me">
+            <h2><span>About</span> Me</h2>
+            <p>
+              I graduated from the University of Washington in Computer Science and Software Engineering. My passion lies in solving complex problems and creating innovative solutions using the knowledge gained throughout my education. I'm eager to apply my skills to real-world projects and continue learning and growing as a software engineer. My interests include full-stack web development and game development.
+            </p>
+          </div>
+          <div class="student-img">
+            <img class="pfp" src="images/pfp.png"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="header" id="header">
+          <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="container lazy-background" id="container">
+          <div class="languages">
+            <p><i class="fas fa-code"></i></p>
+            <h3>Languages</h3>
+            <span
+              >JS/TS
+              <span
+                class="iconify"
+                data-icon="logos:javascript"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="logos-typescript-icon"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span
+              >Python
+              <span
+                class="iconify"
+                data-icon="logos:python"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span
+              >Java <span class="iconify" data-icon="logos:java"></span
+            ></span>
+            <br />
+            <span
+              >SQL
+              <span
+                class="iconify"
+                data-icon="vscode-icons:file-type-sql"
+              ></span
+            ></span>
+            <br />
+            <span
+              >HTML
+              <span
+                class="iconify"
+                data-icon="logos:html-5"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span
+              >CSS/SASS
+              <span
+                class="iconify"
+                data-icon="logos:css-3"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="logos:sass"
+                data-inline="false"
+              ></span
+            ></span>
+          </div>
+
+          <div class="frameworks">
+            <p><i class="fas fa-book-reader"></i></p>
+            <h3>Frameworks/Libraries/Databases</h3>
+            <span
+              >React.js
+              <span
+                class="iconify"
+                data-icon="logos:react"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span
+              >Node.js/Express.js
+              <span
+                class="iconify"
+                data-icon="logos:nodejs-icon"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="simple-icons:express"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span
+              >MongoDB
+              <span
+                class="iconify"
+                data-icon="vscode-icons:file-type-mongo"
+              ></span
+            ></span>
+            <br />
+            <span
+              >Jest
+              <span
+                class="iconify"
+                data-icon="logos:jest"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span
+              >jQuery
+              <span
+                class="iconify"
+                data-icon="bx:bxl-jquery"
+                data-inline="false"
+              ></span>
+            </span>
+            <br />
+            <span
+              >Tailwind
+              <span
+                class="iconify"
+                data-icon="vscode-icons:file-type-tailwind"
+              ></span>
+            </span>
+          </div>
+
+          <div class="technologies">
+            <p><i class="fas fa-tools"></i></p>
+            <h3>Technologies</h3>
+            <span
+              >Git
+              <span
+                class="iconify"
+                data-icon="logos:git-icon"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span>
+              Webpack
+              <span
+                class="iconify"
+                data-icon="logos:webpack"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span
+              >Figma <span class="iconify" data-icon="logos:figma"></span
+            ></span>
+            <br />
+            <span
+              >Canva
+              <span
+                class="iconify"
+                data-icon="cib:canva"
+                style="color: #34cceb"
+              ></span
+            ></span>
+            <br />
+            <span
+              >Heroku
+              <span
+                class="iconify"
+                data-icon="bxl:heroku"
+                style="color: #ab34eb"
+              ></span
+            ></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT SHOWCASE -->
+      <section id="projects">
+        <div class="header" id="header">
+          <h2>My <span>Projects</span></h2>
+        </div>
+
+        <div class="container">
+          <div class="card" id="card">
+            <div class="card-img card13"></div>
+            <div class="card-text">
+              <h2>Animal Crossing Checklist</h2>
+              <p>A checklist to help users catch everything in Animal Crossing</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://rivereh.github.io/ac-list/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/rivereh/ac-list"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
