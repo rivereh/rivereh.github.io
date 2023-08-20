@@ -1,5 +1,4 @@
 const backToTopButton = document.getElementById('back-to-top')
-const colorToggle = document.getElementById('color-toggle-input')
 
 // Typing effect with typed.js
 const typed = new Typed('.animate', {
@@ -12,12 +11,12 @@ const typed = new Typed('.animate', {
 // Make navbar fixed
 function stickyNav() {
   const nav = document.querySelector('nav')
-  nav.classList.toggle('fixed', window.scrollY > 0)
+  nav.classList.toggle('nav-fixed', window.scrollY > 0)
 }
 
 // Button entrance and exit
 function scrollDownFunction() {
-  if (window.pageYOffset > 100) {
+  if (window.scrollY > 1000) {
     backToTopButton.style.cursor = 'pointer'
     backToTopButton.style.opacity = 1
   } else {

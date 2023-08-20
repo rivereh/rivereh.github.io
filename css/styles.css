@@ -14,39 +14,19 @@
 }
 
 * {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-*::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
 html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   overflow-x: hidden;
   background: var(--dark-gray);
-}
-
-.pfp {
-  width: 50%;
-  margin-right: 10rem;
-  border: 4px solid var(--red);
-  border-radius: 50%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -58,19 +38,27 @@ header {
 header nav {
   z-index: 100;
   width: 100%;
-  position: fixed;
   display: flex;
-  justify-content: space-around;
+  position: fixed;
+  justify-content: space-between;
   align-items: center;
   height: 4rem;
+  transition: all 0.3s ease;
+}
+
+.nav-fixed {
+  background-color: var(--dark-red);
+}
+
+.nav-fixed .logo span {
+  color: white;
 }
 
 header nav .logo {
   color: var(--text-color);
   font-size: 1.4rem;
   letter-spacing: 5px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  margin-left: 6rem;
 }
 
 header nav .logo span {
@@ -78,15 +66,9 @@ header nav .logo span {
 }
 
 header nav .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  width: 50rem;
-  max-width: 50%;
-  min-width: 30%;
-  z-index: 1000;
+  gap: 10px;
+  margin-right: 6rem;
 }
 
 header nav .links li {
@@ -268,9 +250,8 @@ header .socials ul li a:hover {
 }
 
 #about .container-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  align-items: center;
 }
 
 #about .container-about .about-me {
@@ -291,7 +272,7 @@ header .socials ul li a:hover {
   color: var(--red);
 }
 
-#about .container-about .about-me h2::after {
+/* #about .container-about .about-me h2::after {
   content: '';
   position: absolute;
   top: 82%;
@@ -299,7 +280,7 @@ header .socials ul li a:hover {
   width: 35%;
   height: 3px;
   background: var(--red);
-}
+} */
 
 #about .container-about .about-me p {
   font-size: 1rem;
@@ -311,29 +292,14 @@ header .socials ul li a:hover {
   line-height: 1.7;
 }
 
-#about .container-about .student-img {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+#about .container-about .user-img {
+  width: 50%;
+  max-width: 300px;
+  border: 4px solid var(--red);
+  border-radius: 50%;
 }
 
-#about .container-about .student-img img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+#about .container-about .user-img img {
 }
 
 .skills {
@@ -417,26 +383,17 @@ header .socials ul li a:hover {
 } */
 
 #projects .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 75%;
   margin: auto;
 }
 
 #projects .container .card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20rem;
-  grid-template-columns: 20rem;
-  -ms-grid-rows: 13rem 16rem 4rem;
-  grid-template-rows: 13rem 16rem 4rem;
-  grid-template-areas: 'image' 'text' 'buttons';
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
   border-radius: 19px;
   background: var(--dark-gray);
   text-align: center;
@@ -446,9 +403,7 @@ header .socials ul li a:hover {
 }
 
 #projects .container .card .card-img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: image;
+  height: 200px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   background-size: cover;
@@ -456,9 +411,6 @@ header .socials ul li a:hover {
 }
 
 #projects .container .card .card-text {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: text;
   padding: 1.5rem;
 }
 
@@ -479,9 +431,8 @@ header .socials ul li a:hover {
 }
 
 #projects .container .card .card-buttons {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: buttons;
+  margin-top: 2rem;
+  height: 50px;
 }
 
 #projects .container .card .card-buttons a {
@@ -510,55 +461,6 @@ header .socials ul li a:hover {
 
 #projects .container .card13 {
   background: url(../images/aclist.png);
-}
-
-.reveal {
-  position: relative;
-  -webkit-transform: translateY(5rem);
-  transform: translateY(5rem);
-  opacity: 0;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
-}
-
-.reveal.active {
-  -webkit-transform: translateY(0rem);
-  transform: translateY(0rem);
-  opacity: 1;
-}
-
-#resume {
-  background: var(--dark-gray);
-  margin: 2.5rem 0 3rem 0;
-  text-align: center;
-}
-
-#resume h2 {
-  font-size: 1.8rem;
-  color: var(--red);
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-#resume h2 span {
-  color: var(--text-color);
-}
-
-#resume .resume {
-  text-decoration: none;
-  color: var(--text-color);
-  border: 2px solid var(--red);
-  padding: 8px 26px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  border-radius: 25px;
-}
-
-#resume .resume:hover {
-  background: var(--red);
-  color: white;
-  -webkit-box-shadow: 0 0 0 5px #e44e5867;
-  box-shadow: 0 0 0 5px #e44e5867;
 }
 
 #back-to-top {
@@ -645,116 +547,28 @@ header .socials ul li a:hover {
   }
 }
 
-@media screen and (max-width: 420px) {
-  #home #hamburger-menu div {
-    height: 2.7px;
-    margin: 4px;
-  }
-  #home .logo {
-    font-size: 0.9rem;
-  }
-  #home .hero .student {
-    font-size: 0.85rem;
-  }
-  #home .hero .hero-btns .about,
-  #home .hero .hero-btns .projects-btn {
-    padding: 8px 24px;
-    font-size: 0.8rem;
-  }
-  #about .container-about .about-me {
-    width: 100%;
-  }
-  #about .container-about .about-me h2 {
-    font-size: 1.8rem;
-  }
-  #about .container-about .about-me p {
-    font-size: 0.9rem;
-    min-width: 70%;
-  }
-  #skills .header h2 {
-    font-size: 1.8rem;
-  }
-  #skills .container .frameworks h3 {
-    font-size: 0.75rem;
-  }
-  #skills .container div {
-    height: 20rem;
-    width: 16rem;
-  }
-  #skills .container div p {
-    font-size: 2.5rem;
-  }
-  #skills .container div h3 {
-    font-size: 1rem;
-  }
-  #skills .container div span {
-    font-size: 0.8rem;
-  }
-  #skills #container div {
-    margin: 1.5rem auto;
-  }
-  #projects .header h2 {
-    font-size: 1.8rem;
-  }
-  #projects .container {
-    width: 100%;
-  }
-  #projects .container .card {
-    -ms-grid-columns: 17rem;
-    grid-template-columns: 17rem;
-    -ms-grid-rows: 12rem 13rem 3rem;
-    grid-template-rows: 12rem 13rem 3rem;
-  }
-  #projects .container .card .card-text h2 {
-    font-size: 1.2rem;
-  }
-  #projects .container .card .card-text p {
-    font-size: 0.8rem;
-  }
-  #projects .container .card .made-with {
-    line-height: 1;
-  }
-  #projects .container .card .card-buttons {
-    font-size: 0.8rem;
-    padding: 4px 16px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
-  #nav {
-    min-height: 8vh;
-  }
-  .links {
-  }
-
-  .hamburger-menu {
-    display: block !important;
-  }
   #about .container-about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   #about .container-about .about-me {
     width: 100%;
   }
   #about .container-about .about-me h2 {
-    width: 70%;
+    text-align: center;
   }
   #about .container-about .about-me h2::after {
-    width: 20%;
+    display: none;
   }
   #about .container-about .about-me p {
-    width: 55%;
+    text-align: center;
   }
-  #about .container-about .student-img {
-    width: 100%;
-    padding: 0 0 5rem 0;
+  #about .container-about .user-img {
+    margin-top: 3rem;
+    width: 30%;
   }
-  #about .container-about .student-img img {
-    width: 40%;
-    height: 40%;
+  #about .container-about .about-me h2 {
+    padding-top: 2rem;
   }
   #skills .header h2 {
     width: 70%;
@@ -769,40 +583,4 @@ header .socials ul li a:hover {
     width: 2.5rem;
     height: 2.5rem;
   }
-}
-
-@media screen and (max-width: 1260px) {
-  #skills .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-.nav-active {
-  z-index: 1000;
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
-  background: #e43955;
-}
-
-.toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-  transform: rotate(45deg) translate(-5px, -6px);
 }
