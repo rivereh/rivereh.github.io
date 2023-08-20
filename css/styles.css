@@ -492,6 +492,89 @@ header .socials ul li a:hover {
   color: var(--dark-red);
 }
 
+footer .header {
+  font-size: 2rem;
+  position: relative;
+  color: var(--text-color);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+#contact {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+#contact .links {
+  width: 100%;
+  max-width: 400px;
+}
+
+#contact form input {
+  background: #292c35;
+  border: none;
+  color: #e6e6e6;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+#contact form textarea {
+  background: #292c35;
+  border: none;
+  color: #e6e6e6;
+  height: 50px;
+  margin: 5px 0;
+  padding: 10px;
+  resize: none;
+}
+
+#contact form button {
+  background: var(--red);
+  border: none;
+  color: #e6e6e6;
+  padding: 10px;
+  transition: border-radius 0.2s ease-out;
+  cursor: pointer;
+}
+
+#contact .links {
+  color: white;
+  font-size: 1.4rem;
+  /* align-items: center; */
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#contact .links .icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+#contact .links .icons a {
+  color: var(--blue);
+}
+
+#contact .links .icons a:hover {
+  color: var(--dark-red);
+}
+
 @media screen and (max-width: 1024px) {
   #about .container-about {
     flex-direction: column-reverse;
@@ -527,6 +610,16 @@ header .socials ul li a:hover {
     font-size: 1rem;
     width: 2.5rem;
     height: 2.5rem;
+  }
+
+  #contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #contact .links .icons {
+    justify-content: center;
   }
 }
 

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11" defer></script>
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" defer></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" defer></script>
-    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js" defer></script>
+    <script src="main.js" defer></script>
     <title>River Hill</title>
   </head>
   <body>
@@ -66,7 +66,7 @@
       <section id="about">
         <div class="container-about">
           <div class="about-me" id="about-me">
-            <h2><span>About</span> Me</h2>
+            <h2>About Me</h2>
             <p>
               I graduated from the University of Washington in Computer Science and Software Engineering. My passion lies in solving complex problems and creating innovative solutions using the knowledge gained throughout my education. I'm eager to apply my skills to real-world projects and continue learning and growing as a software engineer. My interests include full-stack web development and game development.
             </p>
@@ -78,7 +78,7 @@
       <!-- SKILLS -->
       <section class="skills">
         <div class="header" id="header">
-          <h2>My <span>Skills</span></h2>
+          <h2>My Skills</h2>
         </div>
         <div class="container">
           <div class="skill">
@@ -131,7 +131,7 @@
       <!-- PROJECT SHOWCASE -->
       <section id="projects">
         <div class="header" id="header">
-          <h2>My <span>Projects</span></h2>
+          <h2>My Projects</h2>
         </div>
 
         <div class="container">
@@ -188,6 +188,26 @@
 
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="header" id="header">
+        <h2>Contact</h2>
+      </div>
+      <section id="contact">
+        <form action="https://formsubmit.co/riverehill@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" style="height: 220px; overflow-y: hidden;" required></textarea>
+          <button type="submit">Send</button>
+        </form> 
+        <div class="links">
+          <p>Get in touch using the form or the links below.</p>
+          <div class="icons">
+            <a href="https://github.com/rivereh" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="http://linkedin.com/in/rivereh" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:riverehill@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
