@@ -9,10 +9,10 @@ const typed = new Typed('.animate', {
 })
 
 // Make navbar fixed
-function stickyNav() {
-  const nav = document.querySelector('nav')
-  nav.classList.toggle('nav-fixed', window.scrollY > 0)
-}
+// function stickyNav() {
+//   const nav = document.querySelector('nav')
+//   nav.classList.toggle('nav-fixed', window.scrollY > 0)
+// }
 
 // Button entrance and exit
 function scrollDownFunction() {
@@ -30,6 +30,6 @@ function backToTop() {
   window.scrollTo(0, 0)
 }
 
-window.addEventListener('scroll', stickyNav)
+// window.addEventListener('scroll', stickyNav)
 window.addEventListener('scroll', scrollDownFunction)
 backToTopButton.addEventListener('click', backToTop)

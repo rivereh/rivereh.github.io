@@ -39,10 +39,10 @@ header nav {
   z-index: 100;
   width: 100%;
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 5rem;
   transition: all 0.3s ease;
 }
 
@@ -63,6 +63,11 @@ header nav .logo {
 
 header nav .logo span {
   color: var(--red);
+}
+
+header nav img {
+  width: 40px;
+  margin-right: 6em;
 }
 
 header nav .links {
@@ -134,6 +139,8 @@ header .hero p {
 header .hero .hero-btns {
   white-space: nowrap;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 header .hero .hero-btns a {
@@ -299,9 +306,6 @@ header .socials ul li a:hover {
   border-radius: 50%;
 }
 
-#about .container-about .user-img img {
-}
-
 .skills {
   background: var(--dark-gray);
   padding: 5rem 0;
@@ -431,8 +435,9 @@ header .socials ul li a:hover {
 }
 
 #projects .container .card .card-buttons {
-  margin-top: 2rem;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
 }
 
 #projects .container .card .card-buttons a {
@@ -487,66 +492,6 @@ header .socials ul li a:hover {
   color: var(--dark-red);
 }
 
-@media screen and (max-width: 360px) {
-  #home .hero h1 {
-    font-size: 1.8rem;
-  }
-  #home .hero #student {
-    font-size: 0.7rem;
-  }
-  #home .hero .hero-btns #about-btn,
-  #home .hero .hero-btns #projects-btn {
-    padding: 6px 16px;
-    font-size: 0.7rem;
-  }
-  #socials {
-    top: 65%;
-    left: -9.5rem;
-  }
-  #socials ul li a {
-    font-size: 0.8rem;
-  }
-  #about #about-me h2 {
-    font-size: 1.5rem;
-  }
-  #about #about-me p {
-    font-size: 0.7rem;
-  }
-  #skills #header h2 {
-    font-size: 1.5rem;
-  }
-  #skills #container div {
-    height: 18rem;
-    width: 14rem;
-  }
-  #projects #header h2 {
-    font-size: 1.5rem;
-  }
-  #projects .container #card {
-    -ms-grid-columns: 15rem;
-    grid-template-columns: 15rem;
-    -ms-grid-rows: 10rem 12rem 3rem;
-    grid-template-rows: 10rem 12rem 3rem;
-  }
-  #projects .container #card .card-text h2 {
-    font-size: 1rem;
-  }
-  #projects .container #card .card-text p {
-    font-size: 0.7rem;
-  }
-  #projects .container #card .card-buttons {
-    font-size: 0.7rem;
-    padding: 2px 8px;
-  }
-  #resume h2 {
-    font-size: 1.5rem;
-  }
-  #resume .resume {
-    padding: 8 24px;
-    font-size: 0.8rem;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   #about .container-about {
     flex-direction: column-reverse;
@@ -583,4 +528,30 @@ header .socials ul li a:hover {
     width: 2.5rem;
     height: 2.5rem;
   }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+  .hero-btns {
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  header .hero .hero-btns a {
+    margin: 0.5rem;
+  }
+
+  #projects .container .card .card-buttons {
+    flex-direction: column;
+    /* width: 130px; */
+    margin: 1rem 1rem;
+    line-height: 2rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
 }
