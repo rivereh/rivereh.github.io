@@ -114,20 +114,6 @@ header nav .links .link:hover::after {
   width: 100%;
 }
 
-header nav .hamburger-menu {
-  display: none;
-  cursor: pointer;
-}
-
-header nav .hamburger-menu div {
-  background-color: var(--text-color);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  width: 25px;
-  height: 3px;
-  margin: 5px;
-}
-
 header .hero {
   z-index: 5;
   position: absolute;
@@ -350,12 +336,12 @@ header .socials ul li a:hover {
   align-items: center;
 }
 
-#skills {
+.skills {
   background: var(--dark-gray);
   padding: 5rem 0;
 }
 
-#skills .header h2 {
+.skills .header h2 {
   font-size: 2.5rem;
   position: relative;
   color: var(--text-color);
@@ -363,84 +349,41 @@ header .socials ul li a:hover {
   letter-spacing: 2px;
   width: 80%;
   margin: 0 auto 1rem auto;
+  text-align: center;
 }
 
-#skills .header h2 span {
+.skills .header h2 span {
   color: var(--red);
 }
 
-#skills .header h2::after {
-  content: '';
-  position: absolute;
-  margin-left: 1rem;
-  top: 50%;
-  width: 20%;
-  height: 3px;
-  background: var(--red);
-}
-
-#skills .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.skills .container {
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
+  justify-content: center;
   flex-wrap: wrap;
   width: 80%;
-  margin: 0 auto;
-}
-
-#skills .container .languages span {
-  font-size: 0.9rem;
-}
-
-#skills .container .frameworks h3 {
-  font-size: 0.9rem;
-}
-
-#skills .container .frameworks span {
-  font-size: 0.9rem;
-}
-
-#skills .container div {
+  margin: 2rem auto;
+  padding: 2rem;
   background: var(--card-background);
-  height: 22rem;
-  width: 18rem;
-  padding: 1rem;
-  margin: 1.5rem;
-  text-align: center;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  color: #ccc;
+  gap: 1rem;
 }
 
-#skills .container div p {
-  font-size: 4rem;
-  padding: 1rem;
-  color: var(--red);
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
-#skills .container div h3 {
-  color: var(--text-color);
-  padding-bottom: 1rem;
+.skill .iconify {
+  width: 50px;
+  height: 50px;
 }
 
-#skills .container div span {
-  font-size: 1rem;
-  color: var(--skills-span);
-  line-height: 2;
-}
-
-#skills .container div span .iconify {
-  font-size: 1.2rem;
-}
-
-#skills .container div:hover {
-  -webkit-transform: translateY(-3%);
-  transform: translateY(-3%);
-  -webkit-box-shadow: 0 5px var(--red);
-  box-shadow: 0 5px var(--red);
+.skill p {
+  /* width: 40px; */
+  font-size: 0.8rem;
+  /* text-align: center; */
 }
 
 #projects {
@@ -456,13 +399,14 @@ header .socials ul li a:hover {
   letter-spacing: 2px;
   width: 80%;
   margin: 0 auto 1rem auto;
+  text-align: center;
 }
 
 #projects .header h2 span {
   color: var(--red);
 }
 
-#projects .header h2::after {
+/* #projects .header h2::after {
   content: '';
   position: absolute;
   margin-left: 1rem;
@@ -470,7 +414,7 @@ header .socials ul li a:hover {
   width: 20%;
   height: 3px;
   background: var(--red);
-}
+} */
 
 #projects .container {
   display: -webkit-box;
@@ -618,7 +562,8 @@ header .socials ul li a:hover {
 }
 
 #back-to-top {
-  display: none;
+  /* display: none; */
+  opacity: 0;
   position: fixed;
   bottom: 3%;
   right: 4%;
@@ -631,17 +576,11 @@ header .socials ul li a:hover {
   border: none;
   outline: none;
   border-radius: 50%;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-property: background-color, color;
-  transition-property: background-color, color;
   z-index: 1;
+  transition: opacity 0.5s ease;
 }
 
-#back-to-top:hover,
-#back-to-top:focus {
+#back-to-top:hover {
   background-color: var(--text-color);
   color: var(--dark-red);
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="shortcut icon" href="./images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script defer src="main.js"></script>
     <script
@@ -12,7 +12,7 @@
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
       data-auto-a11y="true"
     ></script>
-    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <!-- <script defer src="https://friconix.com/cdn/friconix.js"></script> -->
     <script
       defer
       src="https://code.iconify.design/1/1.0.7/iconify.min.js"
@@ -33,26 +33,17 @@
         </div>
 
         <ul class="links">
-          <li>
+          <!-- <li>
             <a href="#home" class="link"><i class="fas fa-home"></i> Home</a>
-          </li>
+          </li> -->
           <li>
             <a href="#about" class="link"><i class="fas fa-user"></i> About</a>
           </li>
           <li>
-            <a href="#skills" class="link"
-              ><i class="fas fa-tools"></i> Skills</a
-            >
-          </li>
-          <li>
             <a href="#projects" class="link"
-              ><i class="fab fa-codepen"></i> Projects</a
-            >
+              ><i class="fab fa-codepen"></i> Projects</a>
           </li>
         </ul>
-
-        <div class="hamburger-menu" id="hamburger-menu">
-        </div>
       </nav>
 
       <!-- HERO SECTION -->
@@ -87,178 +78,61 @@
       </section>
 
       <!-- SKILLS -->
-      <section id="skills">
+      <section class="skills">
         <div class="header" id="header">
           <h2>My <span>Skills</span></h2>
         </div>
 
-        <div class="container lazy-background" id="container">
-          <div class="languages">
-            <p><i class="fas fa-code"></i></p>
-            <h3>Languages</h3>
-            <span
-              >JS/TS
-              <span
-                class="iconify"
-                data-icon="logos:javascript"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos-typescript-icon"
-                data-inline="false"
-              ></span
-            ></span>
-            <br />
-            <span
-              >Python
-              <span
-                class="iconify"
-                data-icon="logos:python"
-                data-inline="false"
-              ></span
-            ></span>
-            <br />
-            <span
-              >Java <span class="iconify" data-icon="logos:java"></span
-            ></span>
-            <br />
-            <span
-              >SQL
-              <span
-                class="iconify"
-                data-icon="vscode-icons:file-type-sql"
-              ></span
-            ></span>
-            <br />
-            <span
-              >HTML
-              <span
-                class="iconify"
-                data-icon="logos:html-5"
-                data-inline="false"
-              ></span
-            ></span>
-            <br />
-            <span
-              >CSS/SASS
-              <span
-                class="iconify"
-                data-icon="logos:css-3"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:sass"
-                data-inline="false"
-              ></span
-            ></span>
+        <div class="container">
+          
+          <div class="skill">
+            <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="vscode-icons:file-type-css"></span>
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="logos:javascript"></span>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="devicon:typescript"></span>
+            <p>TypeScript</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="skill-icons:react-dark"></span>
+            <p>React</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="logos:vue"></span>
+            <p>Vue</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="skill-icons:vite-dark"></span>
+            <p>Vite</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="logos:python"></span>
+            <p>Python</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="skill-icons:unity-dark"></span>
+            <p>Unity</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="logos:c-sharp"></span>
+            <p>C#</p>
+          </div>
+          <div class="skill">
+            <span class="iconify" data-icon="devicon:c"></span>
+            <p>C++</p>
           </div>
 
-          <div class="frameworks">
-            <p><i class="fas fa-book-reader"></i></p>
-            <h3>Frameworks/Libraries/Databases</h3>
-            <span
-              >React.js
-              <span
-                class="iconify"
-                data-icon="logos:react"
-                data-inline="false"
-              ></span
-            ></span>
-            <br />
-            <span
-              >Node.js/Express.js
-              <span
-                class="iconify"
-                data-icon="logos:nodejs-icon"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="simple-icons:express"
-                data-inline="false"
-              ></span
-            ></span>
-            <br />
-            <span
-              >MongoDB
-              <span
-                class="iconify"
-                data-icon="vscode-icons:file-type-mongo"
-              ></span
-            ></span>
-            <br />
-            <span
-              >Jest
-              <span
-                class="iconify"
-                data-icon="logos:jest"
-                data-inline="false"
-              ></span
-            ></span>
-            <br />
-            <span
-              >jQuery
-              <span
-                class="iconify"
-                data-icon="bx:bxl-jquery"
-                data-inline="false"
-              ></span>
-            </span>
-            <br />
-            <span
-              >Tailwind
-              <span
-                class="iconify"
-                data-icon="vscode-icons:file-type-tailwind"
-              ></span>
-            </span>
-          </div>
+          
 
-          <div class="technologies">
-            <p><i class="fas fa-tools"></i></p>
-            <h3>Technologies</h3>
-            <span
-              >Git
-              <span
-                class="iconify"
-                data-icon="logos:git-icon"
-                data-inline="false"
-              ></span
-            ></span>
-            <br />
-            <span>
-              Webpack
-              <span
-                class="iconify"
-                data-icon="logos:webpack"
-                data-inline="false"
-              ></span
-            ></span>
-            <br />
-            <span
-              >Figma <span class="iconify" data-icon="logos:figma"></span
-            ></span>
-            <br />
-            <span
-              >Canva
-              <span
-                class="iconify"
-                data-icon="cib:canva"
-                style="color: #34cceb"
-              ></span
-            ></span>
-            <br />
-            <span
-              >Heroku
-              <span
-                class="iconify"
-                data-icon="bxl:heroku"
-                style="color: #ab34eb"
-              ></span
-            ></span>
-          </div>
+          
         </div>
       </section>
 
