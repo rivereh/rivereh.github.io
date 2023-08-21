@@ -586,11 +586,11 @@ footer .header {
   font-size: 2rem;
 }
 
-#contact .links .icons a {
+a {
   color: var(--blue);
 }
 
-#contact .links .icons a:hover {
+a:hover {
   color: var(--dark-red);
 }
 
