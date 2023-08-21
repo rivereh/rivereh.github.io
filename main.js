@@ -2,7 +2,7 @@ const backToTopButton = document.getElementById('back-to-top')
 
 // Typing effect with typed.js
 const typed = new Typed('.animate', {
-  strings: ['coder.', 'gamer.', 'cat lover.'],
+  strings: ['coder.', 'gamer.'],
   typeSpeed: 100,
   backSpeed: 100,
   loop: true
