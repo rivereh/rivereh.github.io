@@ -464,8 +464,22 @@ header .socials ul li a:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-#projects .container .card13 {
+#projects .container .card .card-buttons.expo {
+  font-size: 0.8rem;
+}
+
+/* CARD IMAGES */
+
+#projects .container .card1 {
   background: url(../images/aclist.png);
+}
+
+#projects .container .card2 {
+  background: url(../images/zombies.gif);
+}
+
+#projects .container .card3 {
+  background: url(../images/courseexpo.png);
 }
 
 #back-to-top {
@@ -510,6 +524,7 @@ footer .header {
   gap: 2rem;
   margin: auto;
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 #contact form {
