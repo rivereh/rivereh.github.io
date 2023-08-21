@@ -482,6 +482,10 @@ header .socials ul li a:hover {
   background: url(../images/courseexpo.png);
 }
 
+#projects .container .card4 {
+  background: url(../images/multi.png);
+}
+
 #back-to-top {
   /* display: none; */
   opacity: 0;
