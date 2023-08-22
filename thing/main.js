@@ -1,43 +1,6 @@
-const backToTopButton = document.getElementById('back-to-top')
-
-// Typing effect with typed.js
-const typed = new Typed('.animate', {
-  strings: ['coder.', 'gamer.'],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true
-})
-
-// Make navbar fixed
-// function stickyNav() {
-//   const nav = document.querySelector('nav')
-//   nav.classList.toggle('nav-fixed', window.scrollY > 0)
-// }
-
-// Button entrance and exit
-function scrollDownFunction() {
-  if (window.scrollY > 1000) {
-    backToTopButton.style.cursor = 'pointer'
-    backToTopButton.style.opacity = 1
-  } else {
-    backToTopButton.style.opacity = 0
-    backToTopButton.style.cursor = 'default'
-  }
-}
-
-// Back to top button
-function backToTop() {
-  window.scrollTo(0, 0)
-}
-
-// window.addEventListener('scroll', stickyNav)
-window.addEventListener('scroll', scrollDownFunction)
-backToTopButton.addEventListener('click', backToTop)
-
-// Rain by K-T
 var RENDERER = {
   INIT_RAIN_DROP_COUNT: 1500,
-  RAIN_DROP_COUNT: 4,
+  RAIN_DROP_COUNT: 8,
   HUMAN_COUNT: 30,
   COLOR: 'hsl(%hue, 20%, %luminance%)',
   HUE_OFFSET: Math.PI / 1000,
@@ -314,18 +277,3 @@ HUMAN.prototype = {
 $(function () {
   RENDERER.init()
 })
-
-// Add a function to clear the canvas and reset the animation
-RENDERER.clearAndReset = function () {
-  // Clear the canvas
-  // this.context.clearRect(0, 0, this.width, this.height)
-  document.querySelector('.rain-container').innerHTML = ''
-  // Reinitialize the renderer
-  this.setParameters()
-  this.createRainDrops(this.INIT_RAIN_DROP_COUNT, true)
-  this.createHumans()
-}
-
-window.onresize = function () {
-  RENDERER.clearAndReset()
-}

@@ -30,7 +30,7 @@ body {
 }
 
 header {
-  background: var(--dark-gray);
+  /* background: var(--dark-gray); */
   background-size: cover;
   min-height: 100vh;
 }
@@ -170,13 +170,18 @@ header .hero .hero-btns .about:hover {
 
 header .hero .hero-btns .projects-btn {
   color: #fff;
-  border: 2px solid var(--blue);
+  /* border: 2px solid var(--blue); */
   background: var(--blue);
 }
 
+.vignette {
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.7) inset;
+}
+
 header .hero .hero-btns .projects-btn:hover {
-  background: transparent;
+  /* background: transparent; */
   color: var(--text-color);
+  background-color: var(--dark-red);
 }
 
 header .socials {
@@ -678,4 +683,13 @@ a:hover {
 }
 
 @media screen and (max-width: 360px) {
+}
+
+.rain-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  /* top: 50%;
+  left: 50%; */
 }
