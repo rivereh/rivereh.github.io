@@ -395,8 +395,9 @@ header .socials ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 75%;
+  /* width: 75%; */
   margin: auto;
+  max-width: 1800px;
 }
 
 #projects .container .card {
@@ -454,8 +455,7 @@ header .socials ul li a:hover {
   color: var(--text-color);
   background: var(--red);
   border-radius: 25px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 #projects .container .card .card-buttons a i {
@@ -463,8 +463,8 @@ header .socials ul li a:hover {
 }
 
 #projects .container .card .card-buttons a:hover {
-  background: var(--text-color);
-  color: var(--red);
+  background: var(--dark-red);
+  /* color: var(--red); */
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
