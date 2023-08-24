@@ -158,50 +158,39 @@ header .hero p {
   background: var(--dark-blue);
 }
 
-#about .container-about {
+#about .container {
   display: flex;
   align-items: center;
 }
 
-#about .container-about .about-me {
+.about-me {
   width: 60%;
 }
 
-#about .container-about .about-me h2 {
+.about-me h2 {
   font-size: 2.5rem;
-  position: relative;
-  color: #fff;
+  color: var(--text-color);
   letter-spacing: 2px;
   padding-top: 5rem;
   width: 66%;
   margin: 0 auto;
 }
 
-#about .container-about .about-me h2 span {
+.about-me h2 span {
   color: var(--light-blue);
 }
 
-/* #about .container-about .about-me h2::after {
-  content: '';
-  position: absolute;
-  top: 82%;
-  margin-left: 1rem;
-  width: 35%;
-  height: 3px;
-  background: var(--red);
-} */
-
-#about .container-about .about-me p {
+.about-me p {
   font-size: 1rem;
   margin: 0 auto;
   padding: 2rem 0 5rem 0;
   max-width: 67%;
-  color: #c8c8c8;
+  color: var(--lighter-text);
   font-weight: bolder;
   line-height: 1.7;
 }
 
-#about .container-about .user-img {
+.user-img {
   width: 50%;
   max-width: 300px;
   border: 4px solid var(--light-blue);
@@ -274,20 +263,6 @@ header .hero p {
   text-align: center;
 }
 
-#projects .header h2 span {
-  color: var(--light-blue);
-}
-
-/* #projects .header h2::after {
-  content: '';
-  position: absolute;
-  margin-left: 1rem;
-  top: 50%;
-  width: 20%;
-  height: 3px;
-  background: var(--red);
-} */
-
 #projects .container {
   display: flex;
   flex-wrap: wrap;
@@ -297,7 +272,7 @@ header .hero p {
   max-width: 1800px;
 }
 
-#projects .container .card {
+.card {
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -305,45 +280,39 @@ header .hero p {
   background: var(--dark-gray);
   text-align: center;
   margin: 2rem;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-#projects .container .card .card-img {
+.card-img {
   height: 200px;
+
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  background-size: cover;
-  background-position: center;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
-#projects .container .card .card-text {
+.card-text {
   padding: 1.5rem;
 }
 
-#projects .container .card .card-text h2 {
+.card-text h2 {
   padding: 0.5rem 0 1rem 0;
   color: var(--text-color);
 }
 
-#projects .container .card .card-text p {
+.card-text p {
   color: var(--gray);
   line-height: 1.6;
 }
 
-#projects .container .card .card-text .made-with {
-  color: var(--gray);
-  line-height: 1.6;
-  font-weight: bold;
-}
-
-#projects .container .card .card-buttons {
+.card .btns {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
 }
 
-#projects .container .card .card-buttons a {
+.card .btns a {
   margin-left: 0.5rem;
   text-decoration: none;
   padding: 8px 24px;
@@ -355,40 +324,39 @@ header .hero p {
   transition: 0.3s ease;
 }
 
-#projects .container .card .card-buttons a i {
+.card .btns a i {
   padding-right: 5px;
 }
 
-#projects .container .card .card-buttons a:hover {
+.card .btns a:hover {
   background: var(--blue);
   /* color: var(--red); */
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-#projects .container .card .card-buttons.expo {
+.card .btns.expo {
   font-size: 0.8rem;
 }
 
 /* CARD IMAGES */
-
-#projects .container .card1 {
+.card1 {
   background: url(../images/aclist.png);
 }
 
-#projects .container .card2 {
+.card2 {
   background: url(../images/zombies.gif);
 }
 
-#projects .container .card3 {
+.card3 {
   background: url(../images/courseexpo.png);
 }
 
-#projects .container .card4 {
+.card4 {
   background: url(../images/multi.png);
 }
 
-#projects .container .card5 {
+.card5 {
   background: url(../images/codepen.png);
 }
 
@@ -501,33 +469,27 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  #about .container-about {
+  #about .container {
     flex-direction: column-reverse;
   }
-  #about .container-about .about-me {
+  .about-me {
     width: 100%;
   }
-  #about .container-about .about-me h2 {
+  .about-me h2 {
     text-align: center;
   }
-  #about .container-about .about-me h2::after {
+  .about-me h2::after {
     display: none;
   }
-  #about .container-about .about-me p {
+  .about-me p {
     text-align: center;
   }
-  #about .container-about .user-img {
+  .user-img {
     margin-top: 3rem;
     width: 30%;
   }
-  #about .container-about .about-me h2 {
+  .about-me h2 {
     padding-top: 2rem;
-  }
-  #skills .header h2 {
-    width: 70%;
-  }
-  #projects .header h2 {
-    width: 70%;
   }
   #back-to-top {
     bottom: 6%;
@@ -552,17 +514,17 @@ a:hover {
 }
 
 @media screen and (max-width: 640px) {
-  .btns {
+  .hero .btns {
     flex-direction: column;
     max-width: 300px;
     margin: auto;
   }
 
-  header .hero .btns a {
-    margin: 0.5rem;
+  .hero .btns a {
+    margin: 0.3rem;
   }
 
-  #projects .container .card .card-buttons {
+  .card .btns {
     flex-direction: column;
     /* width: 130px; */
     margin: 1rem 1rem;
