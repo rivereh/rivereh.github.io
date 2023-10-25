@@ -360,6 +360,10 @@ header .hero p {
   background: url(../images/codepen.png);
 }
 
+.card6 {
+  background: url(../images/cvbuilder.png);
+}
+
 #back-to-top {
   /* display: none; */
   opacity: 0;
