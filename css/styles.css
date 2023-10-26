@@ -306,6 +306,10 @@ header .hero p {
   line-height: 1.6;
 }
 
+.card-text.small {
+  font-size: 0.9rem;
+}
+
 .card .btns {
   display: flex;
   justify-content: center;
@@ -362,6 +366,10 @@ header .hero p {
 
 .card6 {
   background: url(../images/cvbuilder.png);
+}
+
+.card7 {
+  background: url(../images/flashlearn.png);
 }
 
 #back-to-top {
