@@ -372,6 +372,10 @@ header .hero p {
   background: url(../images/flashlearn.png);
 }
 
+.card8 {
+  background: url(../images/fps.gif);
+}
+
 #back-to-top {
   /* display: none; */
   opacity: 0;
