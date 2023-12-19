@@ -1,12 +1,12 @@
 const backToTopButton = document.getElementById('back-to-top')
 
 // Typing effect with typed.js
-const typed = new Typed('.animate', {
-  strings: ['coder.', 'gamer.'],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true
-})
+// const typed = new Typed('.animate', {
+//   strings: ['coder.', 'gamer.'],
+//   typeSpeed: 100,
+//   backSpeed: 100,
+//   loop: true
+// })
 
 // Make navbar fixed
 // function stickyNav() {
@@ -115,7 +115,7 @@ var RENDERER = {
     this.theta %= Math.PI * 2
     this.phi += this.HUE_OFFSET
     this.phi %= Math.PI * 2
-  }
+  },
 }
 var RAIN_DROP = function (width, height, toInit, renderer) {
   this.width = width
@@ -150,7 +150,7 @@ RAIN_DROP.prototype = {
     this.offset = this.height * this.VERTICAL_OFFSET_RATE
     this.x = this.renderer.getRandomValue({
       min: 0,
-      max: this.width - this.height * Math.cos(this.theta)
+      max: this.width - this.height * Math.cos(this.theta),
     })
     this.y =
       (this.toInit
@@ -202,7 +202,7 @@ RAIN_DROP.prototype = {
       this.vy += this.ay
     }
     return true
-  }
+  },
 }
 var HUMAN = function (width, height, renderer) {
   this.width = width
@@ -309,7 +309,7 @@ HUMAN.prototype = {
       context.closePath()
       context.fill()
     }
-  }
+  },
 }
 $(function () {
   RENDERER.init()

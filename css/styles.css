@@ -470,10 +470,15 @@ footer .header {
   gap: 2rem;
 }
 
-#contact .links .icons {
+#contact .links .icons,
+.hero .icons {
   display: flex;
   gap: 1rem;
   font-size: 2rem;
+}
+
+.hero .icons {
+  justify-content: center;
 }
 
 a {
@@ -482,6 +487,10 @@ a {
 
 a:hover {
   color: var(--blue);
+}
+
+.hero.icons a {
+  width: 100px;
 }
 
 @media screen and (max-width: 1024px) {

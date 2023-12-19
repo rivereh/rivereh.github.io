@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>River Hill</title>
   </head>
   <body>
@@ -23,20 +26,31 @@
         <div class="nav-text">
           <h3>River <span>Hill</span></h3>
         </div>
-        <img src="images/pfp.png">
+        <img src="images/pfp.png" />
       </nav>
 
       <!-- HERO SECTION -->
       <div class="hero">
-        <h1>Hi, I'm a <span class="animate"></span></h1>
-        <p>Software engineer graduate from Seattle, WA</p>
+        <!-- <h1>Hi, I'm a <span class="animate"></span></h1> -->
+        <h1>Hi, I'm River</h1>
+        <p>A software engineer from Seattle, WA</p>
         <div class="btns">
           <!-- <a href="#about" class="about" id="about-btn">About me</a> -->
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <!-- <a href="#contact">Contact</a> -->
         </div>
-        
+        <div class="icons">
+          <a href="https://github.com/rivereh" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="http://linkedin.com/in/rivereh" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="mailto:riverehill@gmail.com" target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
       </div>
       <a href="#about"><i class="fa-solid fa-chevron-down chevron"></i></a>
     </header>
@@ -48,10 +62,16 @@
           <div class="about-me">
             <h2>About Me</h2>
             <p>
-              I graduated from the University of Washington in Computer Science and Software Engineering. My passion lies in solving complex problems and creating innovative solutions using the knowledge gained throughout my education. I'm eager to apply my skills to real-world projects and continue learning and growing as a software engineer. My interests include full-stack web development and game development.
+              I graduated from the University of Washington in Computer Science
+              and Software Engineering. My passion lies in solving complex
+              problems and creating innovative solutions using the knowledge
+              gained throughout my education. I'm eager to apply my skills to
+              real-world projects and continue learning and growing as a
+              software engineer. My interests include full-stack web development
+              and game development.
             </p>
           </div>
-          <img class="user-img" src="images/pfp.png"/>
+          <img class="user-img" src="images/pfp.png" />
         </div>
       </section>
 
@@ -62,7 +82,10 @@
         </div>
         <div class="container">
           <div class="skill">
-            <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
+            <span
+              class="iconify"
+              data-icon="vscode-icons:file-type-html"
+            ></span>
             <p>HTML</p>
           </div>
           <div class="skill">
@@ -78,15 +101,24 @@
             <p>TypeScript</p>
           </div>
           <div class="skill">
-            <span class="iconify" data-icon="vscode-icons:file-type-node"></span>
+            <span
+              class="iconify"
+              data-icon="vscode-icons:file-type-node"
+            ></span>
             <p>Node</p>
           </div>
           <div class="skill">
-            <span class="iconify" data-icon="skill-icons:expressjs-light"></span>
+            <span
+              class="iconify"
+              data-icon="skill-icons:expressjs-light"
+            ></span>
             <p>Express</p>
           </div>
           <div class="skill">
-            <span class="iconify" data-icon="vscode-icons:file-type-mongo"></span>
+            <span
+              class="iconify"
+              data-icon="vscode-icons:file-type-mongo"
+            ></span>
             <p>MongoDB</p>
           </div>
           <div class="skill">
@@ -134,12 +166,14 @@
           <h2>My Projects</h2>
         </div>
         <div class="container">
-
           <div class="card">
             <div class="card-img card3"></div>
             <div class="card-text">
               <h2>CourseExpo</h2>
-              <p>A collaborative VR/desktop learning environment built in Unity for the University of Washington</p>
+              <p>
+                A collaborative VR/desktop learning environment built in Unity
+                for the University of Washington
+              </p>
             </div>
             <div class="btns expo">
               <a
@@ -167,15 +201,16 @@
             <div class="card-img card7"></div>
             <div class="card-text small">
               <h2>FlashLearn</h2>
-              <p>A full-stack flash card app. Built with the MEAN stack. Utilizes a REST API hosted in an EC2 instance. User data managed by MongoDB.</p>
+              <p>
+                A full-stack flash card app. Built with the MEAN stack. Utilizes
+                a REST API hosted in an EC2 instance. User data managed by
+                MongoDB.
+              </p>
             </div>
             <div class="btns expo">
-              <a
-                href="http://flashlearnapp.xyz"
-                target="_blank"
-                class="demo"
+              <!-- <a href="http://flashlearnapp.xyz" target="_blank" class="demo"
                 ><i class="fa-solid fa-newspaper"></i> Demo</a
-              >
+              > -->
               <a
                 href="https://github.com/rivereh/flashlearn"
                 target="_blank"
@@ -195,7 +230,10 @@
             <div class="card-img card6"></div>
             <div class="card-text">
               <h2>CV Builder</h2>
-              <p>Built with React and Material UI. Create a resume with instant results. Utilized a CI/CD approach while developing.</p>
+              <p>
+                Built with React and Material UI. Create a resume with instant
+                results. Utilized a CI/CD approach while developing.
+              </p>
             </div>
             <div class="btns">
               <a
@@ -213,12 +251,15 @@
             </div>
           </div>
 
-
           <div class="card" id="card">
             <div class="card-img card8"></div>
             <div class="card-text">
               <h2>Overflow</h2>
-              <p>An FPS free for all game made in Unity. Uses the UNET muliplayer solution. Players fight against eachother to earn the most points.</p>
+              <p>
+                An FPS free for all game made in Unity. Uses the UNET muliplayer
+                solution. Players fight against eachother to earn the most
+                points.
+              </p>
             </div>
             <div class="btns">
               <a
@@ -234,7 +275,10 @@
             <div class="card-img card1"></div>
             <div class="card-text">
               <h2>Animal Crossing Checklist</h2>
-              <p>A checklist to help users catch everything in Animal Crossing built with Vue</p>
+              <p>
+                A checklist to help users catch everything in Animal Crossing
+                built with Vue
+              </p>
             </div>
             <div class="btns">
               <a
@@ -279,12 +323,21 @@
             <div class="card-img card4"></div>
             <div class="card-text">
               <h2>Backrooms Prototype</h2>
-              <p>A cooperative multiplayer puzzle game built in Unity with <a href="https://www.photonengine.com/" target="_blank">Photon</a> networking and <a href="https://placeholder-software.co.uk/dissonance/" target="_blank">Dissonance</a> voice chat</p>
+              <p>
+                A cooperative multiplayer puzzle game built in Unity with
+                <a href="https://www.photonengine.com/" target="_blank"
+                  >Photon</a
+                >
+                networking and
+                <a
+                  href="https://placeholder-software.co.uk/dissonance/"
+                  target="_blank"
+                  >Dissonance</a
+                >
+                voice chat
+              </p>
             </div>
           </div>
-
-          
-
         </div>
       </section>
     </main>
@@ -302,14 +355,20 @@
         <div class="links">
           <p>Get in touch</p>
           <div class="icons">
-            <a href="https://github.com/rivereh" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="http://linkedin.com/in/rivereh" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:riverehill@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/rivereh" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="http://linkedin.com/in/rivereh" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="mailto:riverehill@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
           </div>
         </div>
       </section>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="main.js"></script>
