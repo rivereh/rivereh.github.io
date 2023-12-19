@@ -540,9 +540,10 @@ a:hover {
 
 @media screen and (max-width: 640px) {
   .hero .btns {
-    flex-direction: column;
-    max-width: 300px;
-    margin: auto;
+    /* flex-direction: column;
+    max-width: 200px;
+    margin: auto; */
+    margin-bottom: 0.5rem;
   }
 
   .hero .btns a {
