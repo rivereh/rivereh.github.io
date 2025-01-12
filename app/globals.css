@@ -119,6 +119,7 @@ header .hero p {
 
 .vignette {
   box-shadow: 0 0 200px rgba(0, 0, 0, 0.7) inset;
+  background-image: url(../public/seattlebg.gif);
 }
 
 .chevron {
@@ -171,6 +172,7 @@ header .hero p {
 #about .container {
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 .about-me {
@@ -236,7 +238,23 @@ header .hero p {
   padding: 2rem;
   background: var(--card-background);
   color: #ccc;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.hero .icons a {
+  background: var(--light-blue2);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .icons a:hover {
+  background: var(--blue);
 }
 
 .skill {
