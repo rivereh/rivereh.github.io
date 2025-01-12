@@ -28,7 +28,7 @@ export default function Home() {
 
         {/* <!-- HERO SECTION --> */}
         <div className='hero'>
-          <h1>Hi, I'm River</h1>
+          <h1>Hi, I&apos;m River</h1>
           <p>A software engineer from Seattle, WA</p>
           <div className='btns'>
             {/* <!-- <a href="#about" className="about" id="about-btn">About me</a> --> */}
@@ -63,10 +63,10 @@ export default function Home() {
                 I graduated from the University of Washington in Computer
                 Science and Software Engineering. My passion lies in solving
                 complex problems and creating innovative solutions using the
-                knowledge gained throughout my education. I'm eager to apply my
-                skills to real-world projects and continue learning and growing
-                as a software engineer. My interests include full-stack web
-                development and game development.
+                knowledge gained throughout my education. I&apos;m eager to
+                apply my skills to real-world projects and continue learning and
+                growing as a software engineer. My interests include full-stack
+                web development and game development.
               </p>
             </div>
             <img className='user-img' src='./pfp.png' />
@@ -402,8 +402,8 @@ export default function Home() {
         </section>
       </footer>
 
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js'></script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+      <Script src='https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js' />
+      <Script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' />
       {/* <script src='main.js'></script> */}
       <Script src='main.js' />
     </div>
