@@ -10,7 +10,7 @@ const ProjectSection = () => {
       </div>
       <div className='container'>
         {projects.map((project: Project) => {
-          return <ProjectCard project={project} />
+          return <ProjectCard key={project.id} project={project} />
         })}
       </div>
     </section>

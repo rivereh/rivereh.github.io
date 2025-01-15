@@ -1,6 +1,4 @@
 import Script from 'next/script'
-import ProjectCard from './(components)/ProjectCard'
-import projects from './projects.json'
 import ProjectSection from './(components)/ProjectSection'
 
 export default function Home() {
