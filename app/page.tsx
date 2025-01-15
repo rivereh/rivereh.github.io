@@ -1,4 +1,7 @@
 import Script from 'next/script'
+import ProjectCard from './(components)/ProjectCard'
+import projects from './projects.json'
+import ProjectSection from './(components)/ProjectSection'
 
 export default function Home() {
   return (
@@ -179,12 +182,19 @@ export default function Home() {
         </section>
 
         {/* <!-- PROJECT SHOWCASE --> */}
-        <section id='projects'>
+
+        <ProjectSection />
+
+        {/* <section id='projects'>
           <div className='header'>
             <h2>My Projects</h2>
           </div>
           <div className='container'>
-            <div className='card'>
+            {projects.map((project: any) => {
+              return <ProjectCard project={project} />
+            })} */}
+
+        {/* <div className='card'>
               <div className='card-img card3'></div>
               <div className='card-text'>
                 <h2>CourseExpo</h2>
@@ -216,9 +226,9 @@ export default function Home() {
                   <i className='fas fa-code'></i> Code
                 </a>
               </div>
-            </div>
+            </div> */}
 
-            <div className='card'>
+        {/* <div className='card'>
               <div className='card-img card7'></div>
               <div className='card-text small'>
                 <h2>FlashLearn</h2>
@@ -229,9 +239,7 @@ export default function Home() {
                 </p>
               </div>
               <div className='btns expo'>
-                {/* <!-- <a href="http://flashlearnapp.xyz" target="_blank" className="demo"
-                ><i className="fa-solid fa-newspaper"></i> Demo</a
-              > --> */}
+
                 <a
                   href='https://github.com/rivereh/flashlearn'
                   target='_blank'
@@ -247,9 +255,9 @@ export default function Home() {
                   <i className='fas fa-code'></i> API
                 </a>
               </div>
-            </div>
+            </div> */}
 
-            <div className='card'>
+        {/* <div className='card'>
               <div className='card-img card6'></div>
               <div className='card-text'>
                 <h2>CV Builder</h2>
@@ -274,9 +282,9 @@ export default function Home() {
                   <i className='fas fa-code'></i> Code
                 </a>
               </div>
-            </div>
+            </div> */}
 
-            <div className='card' id='card'>
+        {/* <div className='card' id='card'>
               <div className='card-img card8'></div>
               <div className='card-text'>
                 <h2>Overflow</h2>
@@ -295,9 +303,9 @@ export default function Home() {
                   <i className='fas fa-code'></i> Code
                 </a>
               </div>
-            </div>
+            </div> */}
 
-            <div className='card'>
+        {/* <div className='card'>
               <div className='card-img card1'></div>
               <div className='card-text'>
                 <h2>Animal Crossing Checklist</h2>
@@ -322,9 +330,9 @@ export default function Home() {
                   <i className='fas fa-code'></i> Code
                 </a>
               </div>
-            </div>
+            </div> */}
 
-            {/* <!-- <div className="card">
+        {/* <!-- <div className="card">
             <div className="card-img card5"></div>
             <div className="card-text">
               <h2>Font-End Work</h2>
@@ -339,7 +347,7 @@ export default function Home() {
             </div>
           </div> --> */}
 
-            <div className='card'>
+        {/* <div className='card'>
               <div className='card-img card2'></div>
               <div className='card-text'>
                 <h2>Zombie Survival Game</h2>
@@ -349,9 +357,9 @@ export default function Home() {
                   tools and upgrades, scaling difficulty, and leaderboards.
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            <div className='card' id='card'>
+        {/* <div className='card' id='card'>
               <div className='card-img card4'></div>
               <div className='card-text'>
                 <h2>Backrooms Prototype</h2>
@@ -372,9 +380,9 @@ export default function Home() {
                   voice chat
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
+            </div> */}
+        {/* </div>
+        </section> */}
       </main>
       <footer>
         <div className='header'>{/* <!-- <h2>Contact</h2> --> */}</div>
@@ -403,8 +411,6 @@ export default function Home() {
       </footer>
 
       <Script src='https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js' />
-      {/* <Script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' /> */}
-      {/* <Script src='./main.js' /> */}
     </div>
   )
 }

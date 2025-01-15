@@ -344,6 +344,24 @@ header .hero p {
   margin: 1rem 0;
 }
 
+.btn {
+  text-decoration: none;
+  padding: 8px 24px;
+  width: 200px;
+  margin: auto;
+  color: var(--text-color);
+  background: var(--light-blue);
+  border-radius: 25px;
+  transition: 0.3s ease;
+  margin-top: 0.3rem;
+}
+
+.btn:hover {
+  background: var(--blue);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 .card .btns a {
   margin-left: 0.5rem;
   text-decoration: none;
@@ -372,7 +390,7 @@ header .hero p {
 }
 
 /* CARD IMAGES */
-.card1 {
+/* .card1 {
   background: url('../public/aclist.png');
 }
 
@@ -402,7 +420,7 @@ header .hero p {
 
 .card8 {
   background: url(../public/fps.gif);
-}
+} */
 
 #back-to-top {
   /* display: none; */

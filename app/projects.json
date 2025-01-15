@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "CourseExpo",
+    "desc": "A collaborative VR/desktop learning environment built in Unity for the University of Washington.",
+    "coverImage": "./expo_cover.png"
+  },
+  {
+    "id": 2,
+    "title": "FlashLearn",
+    "desc": "A full-stack flash card app. Built with the MEAN stack. Utilizes a REST API and MongoDB.",
+    "coverImage": "./flashlearn_cover.png"
+  },
+  {
+    "id": 3,
+    "title": "CV Builder",
+    "desc": "Built with React and Material UI. Create a resume with instant results. Utilized a CI/CD approach while developing.",
+    "coverImage": "./cvbuilder_cover.png"
+  },
+  {
+    "id": 4,
+    "title": "Overflow",
+    "desc": "An FPS free for all game made in Unity. Uses the UNET muliplayer solution. Players fight against eachother to earn the most points.",
+    "coverImage": "./fps_cover.gif"
+  },
+  {
+    "id": 5,
+    "title": "Animal Crossing Checklist",
+    "desc": "A checklist to help users catch everything in Animal Crossing built with Vue.",
+    "coverImage": "./aclist_cover.png"
+  },
+  {
+    "id": 6,
+    "title": "Zombie Survival Game",
+    "desc": "A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.",
+    "coverImage": "./zombies_cover.gif"
+  },
+  {
+    "id": 7,
+    "title": "Backrooms Prototype",
+    "desc": "A cooperative multiplayer puzzle game built in Unity with Photon networking and Dissonance voice chat",
+    "coverImage": "./multi_cover.png"
+  }
+]
