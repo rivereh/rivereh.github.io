@@ -27,6 +27,15 @@
   h2 {
     @apply text-2xl font-bold;
   }
+  /* a:hover {
+    color: white;
+  } */
+}
+
+@layer components {
+  .hero-icon {
+    @apply bg-light-blue2 hover:bg-blue rounded-full p-2 text-white;
+  }
 }
 
 html {
@@ -142,15 +151,6 @@ header .hero p {
   backdrop-filter: blur(8px);
   -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-}
-
-.rain-container {
-  width: 100%;
-  min-height: 100vh;
-  position: absolute;
-  z-index: -1;
-  /* top: 50%;
-  left: 50%; */
 }
 
 #home .fixed .nav-text {
@@ -389,39 +389,6 @@ header .hero p {
   font-size: 0.8rem;
 }
 
-/* CARD IMAGES */
-/* .card1 {
-  background: url('../public/aclist.png');
-}
-
-.card2 {
-  background: url(../public/zombies.gif);
-}
-
-.card3 {
-  background: url(../public/courseexpo.png);
-}
-
-.card4 {
-  background: url(../public/multi.png);
-}
-
-.card5 {
-  background: url(../public/codepen.png);
-}
-
-.card6 {
-  background: url(../public/cvbuilder.png);
-}
-
-.card7 {
-  background: url(../public/flashlearn.png);
-}
-
-.card8 {
-  background: url(../public/fps.gif);
-} */
-
 #back-to-top {
   /* display: none; */
   opacity: 0;
@@ -531,9 +498,9 @@ a {
   color: var(--light-blue2);
 }
 
-a:hover {
+/* a:hover {
   color: var(--blue);
-}
+} */
 
 .hero.icons a {
   width: 100px;
