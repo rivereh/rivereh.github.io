@@ -4,7 +4,6 @@ import Hero from './(components)/Hero'
 import AboutSection from './(components)/AboutSection'
 import SkillSection from './(components)/SkillSection'
 import BackToTopButton from './(components)/BackToTopButton'
-import ProjectInfo from './(components)/ProjectInfo'
 
 export default function Home() {
   return (
