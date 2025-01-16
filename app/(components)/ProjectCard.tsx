@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Project } from '../(types)/Project.types'
 import ProjectInfo from './ProjectInfo'
+import Image from 'next/image'
 
 type Props = {
   project: Project
@@ -21,10 +22,14 @@ const ProjectCard = ({ project }: Props) => {
 
   return (
     <div className='card text-white shadow-lg'>
-      <img
+      <Image
         className='h-[200px] rounded-t-lg object-cover object-top'
         src={project.coverImage}
         alt=''
+        width={0}
+        height={0}
+        sizes='100vw'
+        style={{ width: '100%', height: 'auto' }}
       />
       <div className='mb-4 flex flex-1 flex-col gap-4 p-4'>
         <h2>{project.title}</h2>

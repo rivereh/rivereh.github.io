@@ -2,6 +2,7 @@ import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { FaAngleDown } from 'react-icons/fa6'
+import Image from 'next/image'
 
 const Hero = () => {
   return (
@@ -12,7 +13,15 @@ const Hero = () => {
             River <span>Hill</span>
           </h3>
         </div>
-        <img src='./pfp.png' />
+        <Image
+          src='./pfp.png'
+          alt='nav icon'
+          className='nav-icon'
+          width={0}
+          height={0}
+          sizes='100vw'
+          style={{ width: '40px', height: 'auto' }}
+        />
       </nav>
 
       {/* <!-- HERO SECTION --> */}
@@ -20,10 +29,8 @@ const Hero = () => {
         <h1>Hi, I&apos;m River</h1>
         <p>A software engineer from Seattle, WA</p>
         <div className='btns'>
-          {/* <!-- <a href="#about" className="about" id="about-btn">About me</a> --> */}
           <a href='#about'>About</a>
           <a href='#projects'>Projects</a>
-          {/* <!-- <a href="#contact">Contact</a> --> */}
         </div>
         <div className='mt-2 flex justify-center gap-4 text-4xl'>
           <a

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const AboutSection = () => {
   return (
     <div id='about'>
@@ -14,7 +16,15 @@ const AboutSection = () => {
             development.
           </p>
         </div>
-        <img className='user-img' src='./pfp.png' />
+        <Image
+          className='user-img'
+          src='./pfp.png'
+          alt='profile image'
+          width={0}
+          height={0}
+          sizes='100vw'
+          style={{ width: '100%', height: 'auto' }}
+        />
       </div>
     </div>
   )

@@ -84,7 +84,7 @@ span {
   color: var(--light-blue);
 }
 
-nav img {
+.nav-icon {
   width: 40px;
   margin-right: 6em;
 }

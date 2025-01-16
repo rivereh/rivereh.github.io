@@ -3,6 +3,7 @@
 import Slider from 'react-slick'
 import { Project } from '../(types)/Project.types'
 import { Icon } from '@iconify/react'
+import Image from 'next/image'
 
 type Props = {
   closeInfo: () => void
@@ -29,10 +30,14 @@ const ProjectInfo = ({ closeInfo, project }: Props) => {
             {project.sliderImages.map((imageUrl) => {
               return (
                 <div key={project.id}>
-                  <img
+                  <Image
                     className='max-h-[400px] w-full object-cover object-top'
                     src={imageUrl}
                     alt=''
+                    width={0}
+                    height={0}
+                    sizes='100vw'
+                    style={{ width: '100%', height: 'auto' }}
                   />
                 </div>
               )
