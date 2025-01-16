@@ -44,6 +44,11 @@
   }
 }
 
+.slick-dots li button::before {
+  color: white !important;
+  margin-top: 0.3rem;
+}
+
 html {
   scroll-behavior: smooth;
 }

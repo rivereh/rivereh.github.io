@@ -7,37 +7,51 @@
   },
   {
     "id": 2,
-    "title": "FlashLearn",
-    "desc": "A full-stack flash card app. Built with the MEAN stack. Utilizes a REST API and MongoDB.",
-    "coverImage": "./flashlearn_cover.png"
+    "title": "Game Tracker",
+    "desc": "A full-stack social network to track your completed games.",
+    "coverImage": "./gametracker_cover.png",
+    "sliderImages": [
+      "./gametracker_cover.png",
+      "./gametracker_1.png",
+      "./gametracker_2.png"
+    ],
+    "techIcons": [
+      "devicon:typescript",
+      "vscode-icons:file-type-mongo",
+      "skill-icons:expressjs-dark",
+      "skill-icons:react-dark",
+      "vscode-icons:file-type-node",
+      "vscode-icons:file-type-tailwind"
+    ]
   },
+
   {
-    "id": 3,
+    "id": 4,
     "title": "CV Builder",
     "desc": "Built with React and Material UI. Create a resume with instant results. Utilized a CI/CD approach while developing.",
     "coverImage": "./cvbuilder_cover.png"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Overflow",
     "desc": "An FPS free for all game made in Unity. Uses the UNET muliplayer solution. Players fight against eachother to earn the most points.",
     "coverImage": "./fps_cover.gif"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Animal Crossing Checklist",
     "desc": "A checklist to help users catch everything in Animal Crossing built with Vue.",
     "coverImage": "./aclist_cover.png"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Zombie Survival Game",
     "desc": "A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.",
     "coverImage": "./zombies_cover.gif"
   },
   {
-    "id": 7,
-    "title": "Backrooms Prototype",
+    "id": 8,
+    "title": "Co-op Puzzle Game",
     "desc": "A cooperative multiplayer puzzle game built in Unity with Photon networking and Dissonance voice chat",
     "coverImage": "./multi_cover.png"
   }

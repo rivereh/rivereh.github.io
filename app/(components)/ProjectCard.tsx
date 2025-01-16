@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: Props) => {
   return (
     <div className='card text-white shadow-lg'>
       <img
-        className='h-[200px] rounded-t-lg object-cover'
+        className='h-[200px] rounded-t-lg object-cover object-top'
         src={project.coverImage}
         alt=''
       />

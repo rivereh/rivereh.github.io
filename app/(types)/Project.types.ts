@@ -4,5 +4,6 @@ export type Project = {
   desc: string
   long_desc?: string
   coverImage: string
+  sliderImages?: string[]
   techIcons?: string[]
 }
