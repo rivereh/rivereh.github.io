@@ -1,12 +1,26 @@
+'use client'
+
+import { useState } from 'react'
 import { Project } from '../(types)/Project.types'
+import ProjectInfo from './ProjectInfo'
 
 type Props = {
   project: Project
 }
 
 const ProjectCard = ({ project }: Props) => {
+  const [showInfo, setshowInfo] = useState(false)
+
+  const handleClick = () => {
+    setshowInfo(true)
+  }
+
+  const closeInfo = () => {
+    setshowInfo(false)
+  }
+
   return (
-    <div className='card text-white'>
+    <div className='card text-white shadow-lg'>
       <img
         className='h-[200px] rounded-t-lg object-cover'
         src={project.coverImage}
@@ -14,9 +28,13 @@ const ProjectCard = ({ project }: Props) => {
       />
       <div className='mb-4 flex flex-1 flex-col gap-4 p-4'>
         <h2>{project.title}</h2>
-        <p>{project.desc}</p>
-        <button className='btn btn-blue'>More Info</button>
+        <p className='mx-4 text-sm'>{project.desc}</p>
+        <button onClick={handleClick} className='btn btn-blue'>
+          More Info
+        </button>
       </div>
+
+      {showInfo && <ProjectInfo closeInfo={closeInfo} project={project} />}
     </div>
   )
 }

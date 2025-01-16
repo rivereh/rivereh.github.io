@@ -30,14 +30,17 @@
   /* a:hover {
     color: white;
   } */
+  h3 {
+    @apply text-lg font-semibold;
+  }
 }
 
 @layer components {
   .hero-icon {
-    @apply bg-light-blue2 hover:bg-blue rounded-full p-2 text-white;
+    @apply rounded-full bg-light-blue2 p-2 text-white hover:bg-blue;
   }
   .footer-icon {
-    @apply text-light-blue2 hover:text-blue rounded-full bg-transparent p-2;
+    @apply rounded-full bg-transparent p-2 text-light-blue2 hover:text-blue;
   }
 }
 
