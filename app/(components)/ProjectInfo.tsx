@@ -28,7 +28,7 @@ const ProjectInfo = ({ closeInfo, project }: Props) => {
           <Slider {...settings} className='mb-6 max-h-[400px]'>
             {project.sliderImages.map((imageUrl) => {
               return (
-                <div>
+                <div key={project.id}>
                   <img
                     className='max-h-[400px] w-full object-cover object-top'
                     src={imageUrl}
@@ -57,7 +57,7 @@ const ProjectInfo = ({ closeInfo, project }: Props) => {
             <div className='flex justify-center gap-2 text-3xl'>
               {project.techIcons.map((iconUrl) => {
                 return (
-                  <div>
+                  <div key={project.id}>
                     <Icon icon={iconUrl} />
                   </div>
                 )
