@@ -19,7 +19,7 @@ const ProjectInfo = ({ closeInfo, project }: Props) => {
 
   return (
     <div className='fixed left-0 top-0 flex h-screen w-full items-center justify-center bg-black bg-opacity-50 text-white'>
-      <div className='flex w-[600px] flex-col gap-3 rounded-lg bg-neutral-800 p-7 shadow-lg'>
+      <div className='mt-[-8rem] flex w-[60%] flex-col gap-3 rounded-lg bg-neutral-800 p-7 shadow-lg'>
         <Slider {...settings} className='mb-6'>
           <div>
             <img src={project.coverImage} alt='' />

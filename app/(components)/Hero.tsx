@@ -1,6 +1,7 @@
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import { FaAngleDown } from 'react-icons/fa6'
 
 const Hero = () => {
   return (
@@ -48,8 +49,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <a href='#about'>
-        <i className='fa-solid fa-chevron-down chevron'></i>
+      <a href='#about' className='chevron'>
+        <FaAngleDown />
       </a>
     </header>
   )
