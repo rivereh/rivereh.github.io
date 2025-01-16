@@ -29,7 +29,7 @@ const ProjectCard = ({ project }: Props) => {
         width={0}
         height={0}
         sizes='100vw'
-        style={{ width: '100%', height: 'auto' }}
+        style={{ width: '100%', height: '200px' }}
       />
       <div className='mb-4 flex flex-1 flex-col gap-4 p-4'>
         <h2>{project.title}</h2>
