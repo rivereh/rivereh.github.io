@@ -8,7 +8,7 @@
   {
     "id": 2,
     "title": "Game Tracker",
-    "desc": "A full-stack social network to track your completed games.",
+    "desc": "A full-stack social network to track your completed games.A full-stack social network to track your completed games.",
     "coverImage": "./gametracker_cover.png",
     "sliderImages": [
       "./gametracker_cover.png",
@@ -46,8 +46,9 @@
   {
     "id": 7,
     "title": "Top Down Shooter Game",
-    "desc": "A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.",
-    "coverImage": "./zombies_cover_2.png"
+    "desc": "A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.",
+    "coverImage": "./zombies_cover_2.png",
+    "techIcons": ["skill-icons:unity-dark", "devicon:csharp"]
   },
   {
     "id": 8,
