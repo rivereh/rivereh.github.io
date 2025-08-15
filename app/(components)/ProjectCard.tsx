@@ -12,9 +12,9 @@ type Props = {
 const ProjectCard = ({ project }: Props) => {
   const [showInfo, setshowInfo] = useState(false)
 
-  const handleClick = () => {
-    setshowInfo(true)
-  }
+  // const handleClick = () => {
+  //   setshowInfo(true)
+  // }
 
   const closeInfo = () => {
     setshowInfo(false)
