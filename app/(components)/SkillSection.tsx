@@ -48,10 +48,10 @@ const SkillSection = () => {
           <Icon icon='vscode-icons:file-type-sql' />
           <p>SQL</p>
         </div>
-        <div className='skill'>
+        {/* <div className='skill'>
           <Icon icon='logos:firebase' />
           <p>Firebase</p>
-        </div>
+        </div> */}
         <div className='skill'>
           <Icon icon='skill-icons:aws-dark' />
           <p>AWS</p>

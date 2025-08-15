@@ -34,9 +34,9 @@ const ProjectCard = ({ project }: Props) => {
       <div className='mb-4 flex flex-1 flex-col gap-4 p-4'>
         <h2>{project.title}</h2>
         <p className='mx-4 text-sm'>{project.desc}</p>
-        <button onClick={handleClick} className='btn btn-blue'>
+        {/* <button onClick={handleClick} className='btn btn-blue'>
           More Info
-        </button>
+        </button> */}
       </div>
 
       {showInfo && <ProjectInfo closeInfo={closeInfo} project={project} />}
