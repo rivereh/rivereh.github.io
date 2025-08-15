@@ -38,12 +38,6 @@
     "coverImage": "./fps_cover.gif"
   },
   {
-    "id": 6,
-    "title": "Animal Crossing Checklist",
-    "desc": "A checklist to help users catch everything in Animal Crossing built with Vue.",
-    "coverImage": "./aclist_cover.png"
-  },
-  {
     "id": 7,
     "title": "Top Down Shooter Game",
     "desc": "A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new tools and upgrades, scaling difficulty, and leaderboards.",
