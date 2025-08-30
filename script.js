@@ -34,7 +34,7 @@ const projects = [
   {
     id: 5,
     title: 'Overflow',
-    desc: 'An FPS free for all game made in Unity. Uses the UNET muliplayer solution. Players fight against eachother to earn the most points.',
+    desc: 'An FPS free for all game made in Unity. Uses the UNET muliplayer solution. Players fight in round based matches against eachother to earn the most points.',
     coverImage: './public/fps_cover.gif',
   },
   {
