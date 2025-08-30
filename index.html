@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Hill</title>
+    <meta name="description" content="Portfolio website created by River">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header id="home" class="vignette">
+        <nav id="nav">
+            <div class="nav-text">
+                <h3>River <span>Hill</span></h3>
+            </div>
+            <img src="./public/pfp.png" alt="nav icon" class="nav-icon">
+        </nav>
+
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <h1>Hi, I'm River</h1>
+            <p>A software engineer from Seattle, WA</p>
+            <div class="btns">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="hero-icons">
+                <a href="https://github.com/rivereh" target="_blank" class="hero-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="http://linkedin.com/in/rivereh" target="_blank" class="hero-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:riverehill@gmail.com" target="_blank" class="hero-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="chevron">
+            <i class="fas fa-angle-down"></i>
+        </a>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <div class="about-me">
+                <h2>About <span>Me</span></h2>
+                <p>
+                    I graduated from the University of Washington in Computer Science
+                    and Software Engineering. My passion lies in solving complex
+                    problems and creating innovative solutions using the knowledge
+                    gained throughout my education. I'm eager to apply my skills to
+                    real-world projects and continue learning and growing as a software
+                    engineer. My interests include full-stack web development and game
+                    development.
+                </p>
+            </div>
+            <img class="user-img" src="./public/pfp.png" alt="profile image">
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills">
+        <div class="header">
+            <h2>My <span>Skills</span></h2>
+        </div>
+        <div class="container">
+            <div class="skill">
+                <iconify-icon icon="skill-icons:react-dark"></iconify-icon>
+                <p>React</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="devicon:typescript"></iconify-icon>
+                <p>TypeScript</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="vscode-icons:file-type-node"></iconify-icon>
+                <p>Node</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="skill-icons:expressjs-light"></iconify-icon>
+                <p>Express</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="vscode-icons:file-type-mongo"></iconify-icon>
+                <p>MongoDB</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="logos:python"></iconify-icon>
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="skill-icons:unity-dark"></iconify-icon>
+                <p>Unity</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="logos:c-sharp"></iconify-icon>
+                <p>C#</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="devicon:c"></iconify-icon>
+                <p>C++</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="vscode-icons:file-type-sql"></iconify-icon>
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <iconify-icon icon="skill-icons:aws-dark"></iconify-icon>
+                <p>AWS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="header">
+            <h2>My <span>Projects</span></h2>
+        </div>
+        <div class="container" id="projects-container">
+            <!-- Projects will be loaded by JavaScript -->
+        </div>
+    </section>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top hide" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER -->
+    <footer>
+        <section id="contact">
+            <div class="links">
+                <p>Get in touch</p>
+                <div class="icons">
+                    <a href="https://github.com/rivereh" target="_blank" class="footer-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="http://linkedin.com/in/rivereh" target="_blank" class="footer-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:riverehill@gmail.com" target="_blank" class="footer-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
