@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
-  --font-montserrat: 'Montserrat', sans-serif;
   --light-blue: #00a6fb;
   --blue: #006494;
   --light-blue2: #0077b5;
@@ -26,8 +26,12 @@ html {
 
 body {
   background: var(--dark-gray);
-  font-family: var(--font-montserrat);
+  font-family: 'Montserrat', sans-serif;
   color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-weight: bold;
 }
 
 /* HEADER AND NAV */
@@ -59,7 +63,6 @@ span {
 .nav-icon {
   width: 40px;
   margin-right: 6em;
-  border-radius: 50%;
 }
 
 /* HERO */
@@ -113,26 +116,30 @@ header .hero p {
 .vignette {
   box-shadow: 0 0 200px rgba(0, 0, 0, 0.7) inset;
   background-image: url(./public/seattlebg.gif);
+  background-size: cover;
+  background-position: center;
 }
 
 .chevron {
   position: absolute;
-  bottom: 5%;
+  top: 95%;
   left: 50%;
-  transform: translateX(-50%);
   color: white;
   font-size: 1.8rem;
-  text-decoration: none;
 }
 
-.hero-icons {
+#contact .links .icons,
+.hero .icons {
   display: flex;
-  justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
+  font-size: 2rem;
 }
 
-.hero-icon {
+.hero .icons {
+  justify-content: center;
+}
+
+.hero .icons a {
   background: var(--light-blue2);
   color: white;
   padding: 0.5rem;
@@ -143,11 +150,19 @@ header .hero p {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 1.2rem;
 }
 
-.hero-icon:hover {
+.hero .icons a:hover {
   background: var(--blue);
+  color: white;
+}
+
+a {
+  color: var(--light-blue2);
+}
+
+a:hover {
+  color: var(--blue);
 }
 
 
@@ -161,7 +176,6 @@ header .hero p {
   display: flex;
   align-items: center;
   margin: auto;
-  padding: 5rem 2rem;
 }
 
 .about-me {
@@ -440,27 +454,7 @@ footer .header {
   justify-content: center;
 }
 
-.footer-icon {
-  background: transparent;
-  color: var(--light-blue2);
-  padding: 0.5rem;
-  border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
 
-.footer-icon:hover {
-  color: var(--blue);
-}
-
-a {
-  color: var(--light-blue2);
-}
 
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 1024px) {
