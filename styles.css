@@ -30,7 +30,9 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
 
@@ -164,8 +166,6 @@ a {
 a:hover {
   color: var(--blue);
 }
-
-
 
 /* ABOUT SECTION */
 #about {
@@ -308,7 +308,7 @@ a:hover {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   background-size: cover !important;
-  background-position: center !important;
+  /* background-position: center !important; */
 }
 
 .card-text {
@@ -453,8 +453,6 @@ footer .header {
   font-size: 2rem;
   justify-content: center;
 }
-
-
 
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 1024px) {
