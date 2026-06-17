@@ -61,6 +61,13 @@ const projects = [
     techIcons: ['skill-icons:unity-dark', 'devicon:csharp'],
   },
   {
+    id: 9,
+    title: "Eden's Boat",
+    desc: 'A short 2d horror game made in 72 hours for the 153rd Mini Jam. Made with three other randomly assigned team members. <a href="https://rver.itch.io/edens-boat" target="_blank">Try it out!</a>',
+    coverImage: './public/edens_boat_cover.png',
+    techIcons: ['skill-icons:unity-dark', 'devicon:csharp'],
+  },
+  {
     id: 8,
     title: 'Co-op Puzzle Game',
     desc: 'A cooperative multiplayer puzzle game built in Unity with Photon networking and Dissonance voice chat',
@@ -118,7 +125,7 @@ function createProjectCard(project) {
   title.textContent = project.title
 
   const description = document.createElement('p')
-  description.textContent = project.desc
+  description.innerHTML = project.desc
 
   cardText.appendChild(title)
   cardText.appendChild(description)
