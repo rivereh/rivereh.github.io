@@ -17,14 +17,7 @@ const projects = [
     title: 'Heartopedia',
     desc: 'A companion app for Heartopia. Users can track their in game collection progress and view detailed information about each collectible.',
     coverImage: './public/heartopedia_cover.png',
-    techIcons: [
-      'devicon:javascript',
-      'vscode-icons:file-type-mongo',
-      'skill-icons:expressjs-dark',
-      'skill-icons:react-dark',
-      'vscode-icons:file-type-node',
-      'vscode-icons:file-type-tailwind',
-    ],
+    techIcons: ['devicon:javascript', 'devicon:firebase'],
   },
   {
     id: 2,
