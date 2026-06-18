@@ -55,7 +55,7 @@ const projects = [
   },
   {
     id: 7,
-    title: 'Top-Down Survival Game',
+    title: 'Top Down Survival Game',
     desc: 'A wave based zombie survival game built in Unity. Features a point collection system that enables players to purchase new weapons and upgrades, scaling difficulty, and leaderboards.',
     coverImage: './public/zombies_cover_2.png',
     techIcons: ['skill-icons:unity-dark', 'devicon:csharp'],
